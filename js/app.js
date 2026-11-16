@@ -37,6 +37,9 @@ const SPECS=[
   ['int','I-01','Analista de inteligencia criminal','Unión Europea · Ministerio del Interior de España']
 ];
 const PROJECTS=[
+  {f:'jopa.proj',n:'Jopa',st:'Proyecto personal',cl:'idea',
+   w:'Aplicación de finanzas personales para registrar y entender ingresos y gastos.',
+   chips:['Desarrollo web','Finanzas']},
   {f:'nexpol.proj',n:'NEXPOL',st:'Tesis · en desarrollo',cl:'dev',
    w:'Plataforma web con inteligencia artificial (arquitectura RAG) que automatiza la redacción de actas de intervención policial a partir de la información que registra el efectivo.',
    meta:[['Rol','Diseño de base de datos, backend y flujos'],['Contexto','Artefacto tecnológico de tesis · UTP']],
@@ -47,9 +50,6 @@ const PROJECTS=[
   {f:'enfermeria.proj',n:'Sistema de registro de enfermería',st:'En desarrollo',cl:'dev',
    w:'Registro de atenciones y control de insumos: triage, constantes vitales, procedimientos y kárdex, con un módulo de autoservicio donde el paciente indica su nivel de dolor.',
    chips:['Laravel','PHP','MySQL']},
-  {f:'jopa.idea',n:'Jopa',st:'Proyecto personal',cl:'idea',
-   w:'Aplicación de finanzas personales para registrar y entender ingresos y gastos.',
-   chips:['Desarrollo web','Finanzas']}
 ];
 const GITHUB='https://github.com/paulcodejs-as';
 
@@ -316,6 +316,14 @@ texPlane(1.86,2.46,-3.7,5.0,-2.83,(g,W,H)=>{
   g.fillStyle='#141d33'; g.font='500 13px monospace'; g.fillText('RAG · FastAPI · IA',18,120);
   ['Registro','Recuperación','Generación','Acta'].forEach((s,i)=>{const y=160+i*44; g.strokeStyle='#1f4fd1'; g.lineWidth=2; g.strokeRect(40,y,176,28); g.fillStyle='#1f4fd1'; g.fillText(s,54,y+19); if(i<3){g.fillStyle='#e8632b';g.fillRect(126,y+28,3,16);}});
 },256,340);
+// Cartel de Jopa en el espacio que ocupaba el proyecto anterior.
+box(1.5,1.1,.06,-1.35,5.75,-2.87,WHITE);
+texPlane(1.38,.98,-1.35,5.75,-2.83,(g,W,H)=>{
+  g.fillStyle='#141d33'; g.fillRect(0,0,W,H);
+  g.fillStyle='#ff9a6b'; g.font='500 12px monospace'; g.fillText('P-02 · FINANZAS PERSONALES',14,26);
+  g.fillStyle='#fafbfc'; g.font='900 38px Archivo,Arial,sans-serif'; g.fillText('JOPA',14,78);
+  g.fillStyle='#8fb3ff'; g.font='500 13px monospace'; g.fillText('INGRESOS · GASTOS',14,108);
+},256,180);
 // Planta
 cyl(.45,.34,.7,-5.2,.35,-1.6,ORANGE,null,12);
 [[0,1.3,0,.75],[-.3,1.8,.15,.5],[.3,1.75,-.1,.48],[0,2.2,0,.4]].forEach(l=>{const s=new THREE.Mesh(new THREE.IcosahedronGeometry(l[3],0),new THREE.MeshLambertMaterial({color:0x3f8a6a,flatShading:true}));s.position.set(-5.2+l[0],l[1],-1.6+l[2]);s.castShadow=true;scene.add(s);});

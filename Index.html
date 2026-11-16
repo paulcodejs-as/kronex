@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paul Neder Araucano Salazar | Desarrollador web en Lima</title>
+<meta name="description" content="Portafolio profesional de Paul Neder Araucano Salazar, ingeniero de sistemas y desarrollador web en Lima, Perú. Experiencia en Laravel, PHP, JavaScript, React, .NET, datos y ciberseguridad.">
+<meta name="author" content="Paul Neder Araucano Salazar">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0e1528">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_PE">
+<meta property="og:title" content="Paul Neder Araucano Salazar | Desarrollador web">
+<meta property="og:description" content="Conoce el portafolio de Paul Araucano: desarrollo web, ingeniería de sistemas, datos y ciberseguridad en Lima, Perú.">
+<meta property="og:image" content="img/logo.jpeg">
+<meta property="og:image:alt" content="Retrato ilustrado de Paul con la marca Kronex">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Paul Neder Araucano Salazar | Desarrollador web">
+<meta name="twitter:description" content="Portafolio profesional de Paul Araucano, ingeniero de sistemas y desarrollador web en Lima, Perú.">
+<meta name="twitter:image" content="img/logo.jpeg">
+<link rel="icon" type="image/jpeg" href="img/logo.jpeg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/estilos.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Paul Neder Araucano Salazar",
+  "jobTitle": "Ingeniero de Sistemas e Informática y desarrollador web",
+  "description": "Profesional peruano especializado en desarrollo web, análisis de datos y seguridad digital.",
+  "image": "img/logo.jpeg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lima",
+    "addressCountry": "PE"
+  },
+  "sameAs": ["https://github.com/paulcodejs-as"],
+  "knowsAbout": ["Desarrollo web", "Laravel", "PHP", "JavaScript", "React", "C#", "ASP.NET Core", "Análisis de datos", "Ciberseguridad"]
+}
+</script>
+</head>
+<body data-state="room">
+
+<header class="site-brand" aria-label="Identidad del portafolio">
+  <img src="img/logo.jpeg" alt="Retrato ilustrado con la marca Kronex" width="56" height="56" fetchpriority="high">
+  <div><strong>Paul Araucano</strong><span>Ingeniero de sistemas · Desarrollador web</span></div>
+</header>
+
+<canvas id="room" aria-label="Habitación 3D con un escritorio y una computadora"></canvas>
+<div class="spots" id="spots"></div>
+
+<main id="inicio">
+<section class="intro" aria-label="Presentación">
+  <p class="tag">Portafolio interactivo</p>
+  <h1>Paul Neder <span>Araucano</span> Salazar</h1>
+  <p>Ingeniero de Sistemas e Informática y programador web. Mi portafolio vive dentro de esta computadora.</p>
+  <button class="power" type="button" id="powerBtn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 3v9"/><path d="M6.3 6.8a8 8 0 1 0 11.4 0"/></svg>
+    Encender la computadora
+  </button>
+  <small>También puedes seleccionar los objetos señalados en la habitación.</small>
+</section>
+</main>
+
+<div class="os" id="os" aria-label="PaulOS, escritorio virtual">
+  <div class="desk" id="desk">
+    <div class="wallmark"><b>PaulOS</b>Lima, Perú · Rev. C · Noviembre 2026</div>
+    <div class="icons" id="icons"></div>
+  </div>
+  <div class="menu" id="menu" hidden></div>
+  <div class="taskbar">
+    <button type="button" class="start" id="startBtn" aria-haspopup="true" aria-expanded="false">Inicio</button>
+    <div class="tabs" id="tabs"></div>
+    <div class="tray">
+      <time id="clock">--:--</time>
+      <button type="button" data-act="off" id="offBtn" aria-label="Cerrar y volver a la habitación">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 3v9"/><path d="M6.3 6.8a8 8 0 1 0 11.4 0"/></svg>Salir
+      </button>
+    </div>
+  </div>
+  <div class="boot" id="boot" hidden></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
+
+
